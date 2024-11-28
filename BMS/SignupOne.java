@@ -1,3 +1,4 @@
+
 import java.awt.Font;
 import java.util.Random;
 import javax.swing.*;
@@ -199,7 +200,7 @@ public class SignupOne extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         new SignupOne();
     }
-}s
+}

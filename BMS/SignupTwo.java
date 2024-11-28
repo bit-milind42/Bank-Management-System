@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class SignupTwo extends JFrame implements ActionListener {
 
-    long random;
+    // long random;
     JTextField aadhar, nameTextField, fnameTextField, emailTextField, addressTextField, cityTextField, stateTextField, pincTextField, pan;
     JButton next;
     JRadioButton male, female, other, ma, un,ema,eun;
@@ -181,7 +181,7 @@ public class SignupTwo extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        String formno = "" + random;
+        // String formno = "" + random;
         String sreligion = (String) religion.getSelectedItem();
         String scategory = (String) category.getSelectedItem();
         String sincome = (String) income.getSelectedItem();
@@ -224,7 +224,8 @@ public class SignupTwo extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, "Details Submitted Successfully");
             
             // Signup3 object
-
+            setVisible(false);
+            new SignupThree(formno).setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();
         }
