@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class SignupTwo extends JFrame implements ActionListener {
 
-    // long random;
+    long random;
     JTextField aadhar, nameTextField, fnameTextField, emailTextField, addressTextField, cityTextField, stateTextField, pincTextField, pan;
     JButton next;
     JRadioButton male, female, other, ma, un,ema,eun;
