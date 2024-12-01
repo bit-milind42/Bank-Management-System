@@ -83,18 +83,6 @@ public class Withdrawl extends JFrame implements ActionListener {
                     System.out.println(e);
                 }
 
-                // try{
-                //     Conn conn =new Conn();
-                //     String query = "insert into bank values('"+date+"', 'Withdrawl', '"+amount+"')";
-                //     conn.s.executeUpdate(query);
-                //     JOptionPane.showMessageDialog(null, "RS " +amount+" Withdrawl Successfully");
-                //     setVisible(false);
-                //     new Transactions(pinnumber).setVisible(true);
-
-
-                // } catch (Exception e) {
-                //     System.out.println(e);
-                // }
             }
 
         } else if (ae.getSource() == back) {

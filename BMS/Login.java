@@ -17,7 +17,6 @@ public class Login extends JFrame implements ActionListener {
         ImageIcon i1 = null;
         try {
             i1 = new ImageIcon(getClass().getResource("/icons/logo.jpg"));
-            // i1 = new ImageIcon(ClassLoader.getSystemResource("/icons/logo.jpg"));
             if (i1.getImageLoadStatus() != MediaTracker.COMPLETE) {
                 throw new Exception("Image not loaded");
             }
@@ -25,7 +24,7 @@ public class Login extends JFrame implements ActionListener {
             System.err.println("Error loading image: " + e.getMessage());
             // Use a placeholder path for testing
             i1 = new ImageIcon("C:/Users/milin/OneDrive/Desktop/Bank Mangement System/src/icons/logo.jpg");
-            // i1 = new ImageIcon("C:/path/to/logo.jpg"); // Replace with the full path if needed
+            
         }
         Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -116,7 +115,7 @@ public class Login extends JFrame implements ActionListener {
             // JOptionPane.showMessageDialog(this, "Login functionality is not yet implemented.");
         } else if (ae.getSource() == signup) {
             setVisible(false);
-            new SignupOne().setVisible(true);
+            new Signup().setVisible(true);
         }
     }
 
@@ -125,9 +124,9 @@ public class Login extends JFrame implements ActionListener {
     }
 }
 
-// Dummy SignupOne class for testing
-class SignupOne extends JFrame {
-    SignupOne() {
+// Dummy Signup class for testing
+class Signup extends JFrame {
+    Signup() {
         setTitle("Signup Page");
         setSize(400, 300);
         setLocation(500, 300);

@@ -25,10 +25,6 @@ public class SignupTwo extends JFrame implements ActionListener {
         Random ran = new Random();
         random = Math.abs((ran.nextLong() % 9000L) + 1000L);
 
-        // JLabel formno = new JLabel("APPLICATION FORM NO. " + random);
-        // formno.setFont(new Font("Raleway", Font.BOLD, 38));
-        // formno.setBounds(140, 20, 600, 40);
-        // add(formno);
 
         JLabel additionalDetails = new JLabel("Page 2: Additional Details ");
         additionalDetails.setFont(new Font("Raleway", Font.BOLD, 22));
@@ -46,10 +42,6 @@ public class SignupTwo extends JFrame implements ActionListener {
         religion.setBackground(Color.WHITE);
         add(religion);
 
-        // nameTextField = new JTextField();
-        // nameTextField.setFont(new Font("Raleway", Font.BOLD, 20));
-        // nameTextField.setBounds(300, 140, 400, 30);
-        // add(nameTextField);
 
 
         JLabel fname = new JLabel("Category:");
@@ -74,11 +66,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         income.setBackground(Color.WHITE);
         add(income);
 
-        // dateChooser = new JDateChooser();
-        // dateChooser.setBounds(300, 240, 400, 30);
-        // dateChooser.setForeground(new Color(105, 105, 105));
-        // add(dateChooser);
-
+        
         JLabel gender = new JLabel("Educational");
         gender.setFont(new Font("Raleway", Font.BOLD, 22));
         gender.setBounds(100, 290, 200, 30);
@@ -113,7 +101,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(address);
 
         pan = new JTextField();
-        pan.setFont(new Font("Raleway", Font.BOLD, 20));
+        pan.setFont(new Font("Raleway", Font.BOLD, 16));
         pan.setBounds(300, 440, 400, 30);
         add(pan);
 
@@ -123,7 +111,7 @@ public class SignupTwo extends JFrame implements ActionListener {
         add(city);
 
         aadhar = new JTextField();
-        aadhar.setFont(new Font("Raleway", Font.BOLD, 20));
+        aadhar.setFont(new Font("Raleway", Font.BOLD, 16));
         aadhar.setBounds(300, 490, 400, 30);
         add(aadhar);
 
@@ -181,31 +169,28 @@ public class SignupTwo extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        // String formno = "" + random;
+        
         String sreligion = (String) religion.getSelectedItem();
         String scategory = (String) category.getSelectedItem();
         String sincome = (String) income.getSelectedItem();
         String seducation = (String) education.getSelectedItem();
         String soccupation = emailTextField.getText();
         String seniorcitizen = null ;
-        // String address = addressTextField.getText();
-        // String city = cityTextField.getText();
-        // String state = stateTextField.getText();
-        // String pin = pincTextField.getText();
+        
 
-        if (syes.isSelected()){
+        if (ma.isSelected()){
             seniorcitizen = "Yes";
 
-        }else if (sno.isSelected()) {
+        }else if (un.isSelected()) {
             seniorcitizen = "No";
         }
 
         String exisitingaccount = null ;
 
-        if (eyes.isSelected()){
+        if (ema.isSelected()){
             exisitingaccount = "Yes";
 
-        }else if (eno.isSelected()) {
+        }else if (eun.isSelected()) {
             exisitingaccount = "No";
         }
 
@@ -224,9 +209,11 @@ public class SignupTwo extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, "Details Submitted Successfully");
             
             // Signup3 object
-            setVisible(false);
+            
             new SignupThree(formno).setVisible(true);
-        } catch (Exception e) {
+            setVisible(false);
+            dispose();
+        }catch (Exception e) {
             e.printStackTrace();
         }
     }

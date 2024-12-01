@@ -163,6 +163,10 @@ public class Transactions extends JFrame implements ActionListener {
 			setVisible(false);
 			new Withdrawl(pinnumber).setVisible(true);
 		}	
+		else if (ae.getSource() == fastcash) {
+			setVisible(false);
+			new FastCash(pinnumber).setVisible(true);
+		}	
 
 	    // Add additional actions for other buttons as needed.
     }
@@ -171,3 +175,7 @@ public class Transactions extends JFrame implements ActionListener {
 	    new Transactions(""); // This main method is just for testing; it won't be used in production.
     }
 }
+
+
+
+
