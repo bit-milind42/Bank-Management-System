@@ -29,15 +29,14 @@ All user data, including account details, transaction history, and authenticatio
 Below are some screenshots of the application:
 
 1. **Login Page**:
-   ![Login Page](path/to/login-screenshot.png)
+   ![Login Page](https://raw.githubusercontent.com/bit-milind42/Bank-Management-System/refs/heads/main/BMS%20SS%201.png)
 
 2. **Dashboard**:
-   ![Dashboard](path/to/dashboard-screenshot.png)
+   ![Dashboard](https://raw.githubusercontent.com/bit-milind42/Bank-Management-System/refs/heads/main/BMS%20SS%202.png)
 
 3. **Balance Enquiry**:
-   ![Deposit Page](path/to/deposit-screenshot.png)
+   ![Deposit Page](https://raw.githubusercontent.com/bit-milind42/Bank-Management-System/refs/heads/main/BMS%20SS%203.png)
 
-> Replace `path/to/your-image.png` with the actual file paths for the screenshots in your project repository.
 
 ## How to Run the Project
 1. Clone the repository to your local machine.
